@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+
+	function palindrome(str) {
+	  str = str.toLowerCase();
+	  str = str.replace(/[^\w]|_/g, "");
+	  var rev = str.split("").reverse().join("");
+	  if (str == rev){
+	    return true;
+	  }
+	  return false;
+	}
+
+
+
+	palindrome("Eye");
+	</script>
+</body>
+</html>
