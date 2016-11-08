@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+
+	function chunkArrayInGroups(arr, size) {
+	  var finalArr = [];
+	  for(n=0;n<arr.length/size;n++){
+	    finalArr.push([]);
+	    finalArr[n] = arr.slice(n*size,n*size+size);
+	  }
+	  return finalArr;
+	}
+
+	console.log(chunkArrayInGroups(["a", "b", "c", "d", "e"], 2));
+
+	</script>
+</body>
+</html>
