@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+	function mutation(arr) {
+	  arr[0] = arr[0].toLowerCase();
+	  arr[1] = arr[1].toLowerCase();
+	  arr[1] = arr[1].split("");
+
+	  for (n=0;n<arr[1].length;n++){
+	    if(arr[0].indexOf(arr[1][n])<0){
+	      return false;
+	    }
+	  }
+	  return true;
+	}
+
+	console.log(mutation(["hello", "Hello"]));
+
+	</script>
+</body>
+</html>
