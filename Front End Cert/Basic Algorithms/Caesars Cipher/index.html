@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+
+		function rot13(str) { // LBH QVQ VG!
+		  str = str.split("");
+		  for(n=0;n<str.length;n++){
+		    str[n] = str[n].charCodeAt(0);
+		    if (str[n]>77){
+		      str[n] -= 13;
+		    } else if (str[n]>64){
+		      str[n] += 13;
+		    }
+		    str[n] = String.fromCharCode(str[n]);
+		  }
+		  str = str.join("");
+		  return str;
+
+		}
+
+		// Change the inputs below to test
+		console.log(rot13("GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."));
+
+	</script>
+</body>
+</html>
