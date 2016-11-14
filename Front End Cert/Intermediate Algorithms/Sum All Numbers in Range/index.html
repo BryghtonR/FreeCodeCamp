@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		function sumAll(arr) {
+		var total = 0;
+		for (n=Math.min(arr[0], arr[1]);n<Math.max(arr[0], arr[1])+1;n++){
+			total = total += n;
+		}
+		return total;
+		}
+
+		console.log(sumAll([1, 4]));
+	</script>
+</body>
+</html>
