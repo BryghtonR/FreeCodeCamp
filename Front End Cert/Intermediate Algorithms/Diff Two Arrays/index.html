@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+
+		function diffArray(arr1, arr2) {
+		var newArr = [];
+		for (n=0;n<arr1.length;n++){
+			if (arr2.indexOf(arr1[n])== -1){
+				newArr = newArr.concat(arr1[n]);
+			}
+		}
+		for (n=0;n<arr2.length;n++){
+			if (arr1.indexOf(arr2[n])== -1){
+				newArr = newArr.concat(arr2[n]);
+			}
+		}
+		return newArr;
+		}
+
+		console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+
+	</script>
+</body>
+</html>
