@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+
+		function myReplace(str, before, after) {
+		str = str.split(" ");
+		for(n=0;n<str.length;n++){
+			if (str[n] == before){
+				str[n].split("");
+				if (str[n][0] == str[n][0].toUpperCase()){
+					str[n] = after.split("");
+					str[n][0] = str[n][0].toUpperCase();
+				} else {
+					str[n] = after.split("");
+					str[n][0] = str[n][0].toLowerCase();
+				}
+				str[n] = str[n].join("");
+			}
+		}
+		str = str.join(" ");
+		return str;
+		}
+
+		console.log(myReplace("He is Sleeping on the couch", "Sleeping", "sitting"));
+	</script>
+</body>
+</html>
