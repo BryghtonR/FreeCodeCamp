@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+
+	function pairElement(str) {
+	  var pairs = [];
+	  str = str.split("");
+	  for (n=0;n<str.length;n++){
+	    if (str[n] == "A"){
+	      pairs.push(["A","T"]);
+	    } else if ( str[n] == "T") {
+	      pairs.push(["T","A"]);
+	    } else if ( str[n] == "C") {
+	      pairs.push(["C","G"]);
+	    } else if ( str[n] == "G") {
+	      pairs.push(["G","C"]);
+	    }
+	  }
+	  return pairs;
+	}
+
+	console.log(pairElement("GCG"));
+
+	</script>
+</body>
+</html>
