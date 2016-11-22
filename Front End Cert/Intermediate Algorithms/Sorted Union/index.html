@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+
+		function uniteUnique(arr){
+		var arrAll = [];
+		for (n=0;n<arguments.length;n++){
+			arrAll = arrAll.concat(arguments[n]);
+		}
+		var arrFinal = [];
+		for (n=0;n<arrAll.length;n++){
+			if (arrFinal.indexOf(arrAll[n])==-1){
+				arrFinal.push(arrAll[n]);
+			}
+		}
+		return arrFinal;
+		}
+
+		console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+
+	</script>
+</body>
+</html>
