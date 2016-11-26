@@ -6,12 +6,12 @@
 	<script>
 
 		function uniteUnique(arr){
-		var arrAll = [];
+		var allArr = [];
 		for (n=0;n<arguments.length;n++){
-			arrAll = arrAll.concat(arguments[n]);
+			arrAll = allArr.concat(arguments[n]);
 		}
 		var arrFinal = [];
-		for (n=0;n<arrAll.length;n++){
+		for (n=0;n<allArr.length;n++){
 			if (arrFinal.indexOf(arrAll[n])==-1){
 				arrFinal.push(arrAll[n]);
 			}
